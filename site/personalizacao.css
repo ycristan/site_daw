@@ -1,0 +1,77 @@
+body{
+	background-color: #F0E68C;
+	border-spacing: 0px;
+	margin: 0px;
+}
+
+table{
+	margin-left: 30%;
+}
+#menu{
+	background-color: green;
+	width: 100%;
+	height: 25px;
+	padding: 0.5%;
+	margin-bottom: 3%;
+}
+
+#ancoras{
+	width: 100%;
+	height: 25%;
+	font-family: 'Righteous', cursive;
+	background-color: #FFD700;
+	color: green;
+	text-decoration: none;
+	text-shadow: 2px 2px 3px black;
+	font-size: 16px;
+}
+
+a{
+	font-family: 'Righteous', cursive;
+	color: yellow;
+	text-decoration: none;
+	text-shadow: 2px 2px 3px black;
+	font-size: 16px;
+
+}
+
+a:hover{
+	font-family: 'Righteous', cursive;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	text-shadow: 2px 2px 3px black;
+	font-size: 16;
+}
+
+img{
+	margin-top: 5%;
+	margin-left: 35%;
+	width: 35%;
+	height: 35%;
+
+}
+
+#apresentacao{
+
+	padding: 3%;
+	margin-top: 5%;
+	margin-left: 35%;
+	width: 30%;
+	height: 50%;
+	background-color: green;
+	color: white;
+	font-weight: bold;
+}
+
+#vantagens{
+
+	padding: 3%;
+	margin-left: 24%;
+	margin-top: 5%;
+	width: 50%;
+	height: 50%;
+	background-color: green;
+	color: white;
+	font-weight: bold;
+}
