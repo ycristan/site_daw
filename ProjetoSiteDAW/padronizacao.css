@@ -1,0 +1,97 @@
+body{
+	background-color: #8B0000;
+	margin: auto;
+	overflow-x: hidden;
+}
+
+#menu{
+	margin-top: 15px;
+	background-color: black;
+	color: white;
+	width: 100%;
+	height: 20px;
+	padding: 0.5%;
+	text-align: center;
+}
+
+.lmenu{
+	color: white;
+	font-family: 'Jura', sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+
+}
+
+.lmenu:hover{
+	color: white;
+	font-weight: bolder;
+	font-family: 'Jura', sans-serif;
+	font-size: 16px;
+	text-shadow: 2px 2px 5px #FF6347;
+	text-decoration: none;
+
+}
+
+.imghome{
+	width: 50%;
+	box-shadow: 4px 4px 8px white;
+	border-radius: 20px;
+
+}
+
+h1{
+	margin-top: 5%;
+	font-family: 'Raleway', sans-serif;
+	color: white;
+	font-weight: bold;
+	text-shadow: 3px 3px 5px #FF8C00;
+}
+
+#maintext{
+	margin-top: 5%;
+	margin-left: 14%;
+	border-radius: 20px;
+	border-right: solid 5px #FF0000	;
+	border-bottom: solid 5px #FF0000	;
+	background-color: black;
+	opacity: 0.5;
+	width: 70%;
+	padding: 1%;
+	font-family: 'BenchNine', sans-serif;
+	font-size: 20px;
+	color: white;
+
+}
+
+#fundo{
+	position: absolute;
+	margin-top: 5%;
+	margin-left: 35%;
+	margin-bottom: 5%;
+	width: 30%;
+	height: 400px;
+	border-radius: 20px;
+	border-right: solid 5px #FF0000	;
+	border-bottom: solid 5px #FF0000	;
+	background-image: url("imagens/squad.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+#lista{
+	position: absolute;
+	left: 42%;
+	top: 240%;
+	z-index: 2;
+	background-color: white;
+	border-radius: 30px;
+	opacity: 0.8;
+	width: 12%;
+	padding: 2%;
+	font-family: 'BenchNine', sans-serif;
+	font-size: 12px;
+	color: black;
+	font-weight: bolder;
+	list-style-position: inside;
+
+}
