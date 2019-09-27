@@ -3,6 +3,9 @@
 
 <meta charset="utf-8">
 <link rel="icon" href="imagens/favicon.ico">
+<link rel="stylesheet" type="text/css" href="padronizacao.css">
+<link href="https://fonts.googleapis.com/css?family=BenchNine|Jura|Raleway&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
 
 <head>
 	<title>Chicago Bulls - Contato</title>
@@ -10,39 +13,34 @@
 
 <body>
 
-<a href="projeto_home.html">HOME</a>
+<div id="menu">
+<a href="projeto_home.html" class="lmenu">HOME</a>
 |
-<a href="projeto_titulos.html">TÍTULOS</a>
+<a href="projeto_titulos.html" class="lmenu">TÍTULOS</a>
 |
-<a href="projeto_camisas_aposentadas.html">CAMISAS APOSENTADAS</a>
+<a href="projeto_camisas_aposentadas.html" class="lmenu">CAMISAS APOSENTADAS</a>
+</div>
 
-<br><br>
 
-<h1>Entre em contato</h1>
+<h1 align="center">Entre em contato</h1>
 
+<div id="form">
 <form>
-	<label for="nome"><b>Nome</b></label><br>
-	<input type="text" name="nome" id="nome" size="50" placeholder="Informe seu nome" maxlength="50" minlength="4" required="true">
+	<label for="nome"><b>Nome</b></label> |	<input type="text" name="nome" id="nome" size="50" placeholder="Informe seu nome" maxlength="50" minlength="4" required="true">
 
 	<br><br>
 
-	<label for="idade"><b>Idade</b></label><br>
-	<input type="number" name="idade" id="idade" size="6" placeholder="Diga sua idade" step="1" required="true">
+	<label for="idade"><b>Idade</b></label> | <input type="number" name="idade" id="idade" size="6" placeholder="Diga sua idade" step="1" required="true">
 
 	<br><br>
 
-	<b>Sexo:</b><br>
-	<b>M</b> <input type="radio" name="M" id="M" value="Masculino">
+	<b>Sexo:</b> | <b>M</b> <input type="radio" name="M" id="M" value="Masculino">
 	<b>F</b> <input type="radio" name="F" id="F" value="Feminino">
 
 	<br><br>
 
-	<b>Seu jogador favorito dos Bulls</b><br><br>
-	<input type="checkbox" name="Jordan">Jordan | <input type="checkbox" name="Jerry">Jerry Sloan<br>
-	
-	<input type="checkbox" name="Bob">Bob Love | <input type="checkbox" name="Scottie">Scottie Pippen<br>
-	
-	<input type="checkbox" name="Derrick Rose">Derrick Rose | <input type="checkbox" name="Outros">Outros<br><br>
+	<b>Seu jogador favorito dos Bulls</b><br>
+	<input type="checkbox" name="Jordan">Jordan | <input type="checkbox" name="Jerry">Jerry Sloan | <input type="checkbox" name="Bob">Bob Love | <input type="checkbox" name="Scottie">Scottie Pippen |	<input type="checkbox" name="Derrick Rose">Derrick Rose | <input type="checkbox" name="Outros">Outros<br><br>
 
 	<b>E-mail:</b><br>
 	<input type="email" name="e-mail" size="50" placeholder="Informe seu email">
@@ -55,11 +53,9 @@
 	<br><br>
 
 	<input type="submit" value="Enviar">
-	
-
-
 
 </form>
+</div>
 
 </body>
 </html>
