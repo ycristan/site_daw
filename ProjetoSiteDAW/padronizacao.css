@@ -7,78 +7,11 @@ body{
 	overflow-x: hidden;
 }
 
-#menu{
-	margin-top: 15px;
-	background-color: #B22222;
-	color: white;
-	width: 100%;
-	height: 20px;
-	padding: 0.5%;
-	text-align: center;
-}
-
-#form{
-	margin: 5%;
-	margin-left: 30%;
-	border-radius: 20px;
-	border-right: solid 5px #FF0000	;
-	border-bottom: solid 5px #FF0000;
-	background-color: black;
-	opacity: 0.8;
-	width: 35%;
-	height: 100%;
-	padding: 1%;
-	font-family: 'BenchNine', sans-serif;
-	font-size: 20px;
-	color: white;
-	text-align: center;
-}
-
-input:hover{
-	box-shadow: 2px 2px 3px yellow, -2px -2px 3px yellow;
-}
-
-textarea:hover{
-	box-shadow: 2px 2px 3px yellow, -2px -2px 3px yellow;
-}
-
-
-.cf {
-            margin-left: 20%;
-            width: 800px;
-            height: 220px;
-            position: relative;
-            background-repeat: no-repeat;
-            
-            animation: animacao1 4s;
-            animation-direction: alternate;
-            animation-iteration-count: infinite; 
-        }
-        
-        @keyframes animacao1 {
-        	from{
-        		border: none;
-            	background-image: url("imagens/withus.jpg");
-            	background-size: 800px 220px;
-        	}
-        	to{
-        		border: none;
-            	background-image: url("imagens/chicagocity.jpg");
-            	background-size: 800px 220px;
-        	}
-            
-
-
 .lmenu{
 	color: white;
 	font-family: 'Jura', sans-serif;
 	font-size: 16px;
-	line-height: 1.5em;
 	text-decoration: none;
-
-}
-
-
 }
 
 .lmenu:hover{
@@ -91,19 +24,23 @@ textarea:hover{
 
 }
 
-.imghome{
-	width: 50%;
-	box-shadow: 4px 4px 8px white;
-	border-radius: 20px;
-
-}
-
 h1{
 	margin-top: 5%;
 	font-family: 'Raleway', sans-serif;
 	color: white;
 	font-weight: bold;
 	text-shadow: 3px 0px 3px black, 0px 3px 3px black, -3px 0px 3px black, 0px -3px 3px black;
+}
+
+
+#menu{
+	margin-top: 15px;
+	background-color: #B22222;
+	color: white;
+	width: 100%;
+	height: 20px;
+	padding: 0.5%;
+	text-align: center;
 }
 
 #maintext{
@@ -121,7 +58,6 @@ h1{
 	font-size: 20px;
 	color: white;
 	text-align: center;
-
 }
 
 #principal {
@@ -148,6 +84,73 @@ h1{
 	font-size: 16px;
 	color: white;
 	font-weight: bolder;
+}
+
+#form{
+	margin: 5%;
+	margin-left: 30%;
+	border-radius: 20px;
+	border-right: solid 5px #FF0000	;
+	border-bottom: solid 5px #FF0000;
+	background-color: black;
+	opacity: 0.8;
+	width: 35%;
+	height: 100%;
+	padding: 1%;
+	font-family: 'BenchNine', sans-serif;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+}
+
+input{
+	min-width: 30%;
+	min-height: 50%;
+}
+
+input:hover{
+	box-shadow: 2px 2px 3px yellow, -2px -2px 3px yellow;
+}
+
+textarea:hover{
+	box-shadow: 2px 2px 3px yellow, -2px -2px 3px yellow;
+}
+
+.cf {
+            margin-left: 20%;
+            width: 800px;
+            height: 220px;
+
+            position: relative;
+            background-repeat: no-repeat;
+            
+            animation: animacao1 4s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite; 
+        }
+        
+        @keyframes animacao1 {
+        	from{
+        		border: none;
+            	background-image: url("imagens/withus.jpg");
+            	background-size: 800px 220px;
+        	}
+        	to{
+        		border: none;
+            	background-image: url("imagens/chicagocity.jpg");
+            	background-size: 800px 220px;
+        	}
+            
+.imghome{
+	width: 50%;
+	box-shadow: 4px 4px 8px white;
+	border-radius: 20px;
+
+}
+
+
+
+
 }
 
 table{
@@ -178,4 +181,42 @@ td{
 	background-color: black;
 	opacity: 0.8;
 	padding: 5px;
+}
+
+/*Breakpoint*/
+
+@media only print and {
+	
+	#maintext{
+	font-family: arial;
+	font-size: 14px;
+	color: black;
+	text-align: left;
+}
+	h1{
+	font-family: arial;
+	color: black;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+table{
+	table-layout: auto|fixed|initial|inherit;
+	border: solid black 1px;
+	border-radius: 2px;
+
+}
+
+th{
+	color: black;
+	font-family: arial;
+	font-size: 10px;
+
+}
+
+td{
+	color: black;
+	font-family: arial;
+	font-size: 10px;
+}
 }
