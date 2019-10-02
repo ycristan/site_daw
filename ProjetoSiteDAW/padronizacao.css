@@ -42,12 +42,42 @@ textarea:hover{
 	box-shadow: 2px 2px 3px yellow, -2px -2px 3px yellow;
 }
 
+
+.cf {
+            margin-left: 20%;
+            width: 800px;
+            height: 220px;
+            position: relative;
+            background-repeat: no-repeat;
+            
+            animation: animacao1 4s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite; 
+        }
+        
+        @keyframes animacao1 {
+        	from{
+        		border: none;
+            	background-image: url("imagens/withus.jpg");
+            	background-size: 800px 220px;
+        	}
+        	to{
+        		border: none;
+            	background-image: url("imagens/chicagocity.jpg");
+            	background-size: 800px 220px;
+        	}
+            
+
+
 .lmenu{
 	color: white;
 	font-family: 'Jura', sans-serif;
 	font-size: 16px;
 	line-height: 1.5em;
 	text-decoration: none;
+
+}
+
 
 }
 
