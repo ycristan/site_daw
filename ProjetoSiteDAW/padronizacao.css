@@ -88,15 +88,17 @@ h1{
 
 #form{
 	margin: 5%;
-	margin-left: 30%;
+	margin-left: 32%;
 	border-radius: 20px;
 	border-right: solid 5px #FF0000	;
 	border-bottom: solid 5px #FF0000;
 	background-color: black;
 	opacity: 0.8;
 	width: 35%;
-	height: 100%;
-	padding: 1%;
+	height: 60%
+	padding: 3%;
+	padding-top: 3%;
+	padding-bottom: 3%;
 	font-family: 'BenchNine', sans-serif;
 	font-size: 20px;
 	color: white;
@@ -106,6 +108,7 @@ h1{
 input{
 	min-width: 30%;
 	min-height: 50%;
+	text-align: center;
 }
 
 input:hover{
@@ -148,6 +151,9 @@ textarea:hover{
 
 }
 
+.boblove{
+	float: right;
+}
 
 
 
@@ -185,38 +191,30 @@ td{
 
 /*Breakpoint*/
 
-@media only print and {
-	
-	#maintext{
-	font-family: arial;
-	font-size: 14px;
-	color: black;
-	text-align: left;
-}
-	h1{
-	font-family: arial;
-	color: black;
-	font-weight: bold;
+@media (max-width: 600px) 
+{
+
+   .cf
+   {
+   	display: none;
+   }
+   #fundo
+   {
+   	display: none;
+   }
+
+   #lista{
+	background-color: black;
+	margin-bottom: 4%;
+	opacity: 0.8;
+	min-width: 200px;
+	font-family: 'BenchNine', sans-serif;
 	font-size: 16px;
+	color: white;
+	font-weight: bolder;
 }
 
-table{
-	table-layout: auto|fixed|initial|inherit;
-	border: solid black 1px;
-	border-radius: 2px;
-
-}
-
-th{
-	color: black;
-	font-family: arial;
-	font-size: 10px;
-
-}
-
-td{
-	color: black;
-	font-family: arial;
-	font-size: 10px;
-}
-}
+	table, th, td, .camisas
+	{
+		display: none;
+	}
