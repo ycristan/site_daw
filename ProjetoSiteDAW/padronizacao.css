@@ -24,7 +24,7 @@ body{
 
 }
 
-h1{
+h1, #h1dif{
 	margin-top: 5%;
 	font-family: 'Raleway', sans-serif;
 	color: white;
@@ -155,8 +155,6 @@ textarea:hover{
 	float: right;
 }
 
-
-
 }
 
 table{
@@ -194,6 +192,10 @@ td{
 @media (max-width: 600px) 
 {
 
+
+	#h1dif{
+		display: none;
+	}
    .cf
    {
    	display: none;
@@ -212,6 +214,34 @@ td{
 	font-size: 16px;
 	color: white;
 	font-weight: bolder;
+}
+
+	table, th, td, .camisas
+	{
+		display: none;
+	}
+
+@media print 
+{
+
+
+	h1, #h1dif{
+		font-size: 16px;
+		font-family: Arial;
+		color: black;
+		text-shadow: transparent;
+	}
+   .cf
+   {
+   	display: none;
+   }
+   #fundo
+   {
+   	display: none;
+   }
+
+   #lista{
+   	display: none; 
 }
 
 	table, th, td, .camisas
