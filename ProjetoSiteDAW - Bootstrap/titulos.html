@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <link rel="icon" href="imagens/favicon.ico">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Autour+One&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/eef4d1033b.js" crossorigin="anonymous"></script>
 
 
 <style type="text/css">
@@ -16,8 +18,16 @@
   }
 
   nav{
-    opacity: 0.9;
+      opacity: 0.9;
   }
+
+  .container{
+      background-color: rgba(178,34,34,0.8);
+      padding: 30px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+  }
+
 </style>
 
 
@@ -61,7 +71,63 @@
 </nav>
 <!--Fim barra de navegação-->
 
+  <div class="container" style="border-radius: 30px"> <!--Container vermelho transparente inicio-->
+      <!--Inicio Acordion-->
+      <div class="accordion" id="accordionExample">
+  <div class="card" align="center" style="border-radius: 15px";>
+    <div class="card-header" id="headingOne" style="background-color: black; color: white; font-family:'Autour One', cursive; border-radius: 15px; text-decoration: inherit;">
+      <h2 class="mb-0">
+        <button id="ac-button" class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: white; text-decoration: none;">
+          1º TÍTULO - Temporada 1990-1991
+        </button>
+      </h2>
+    </div>
 
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+
+        <img src="imagens\1991_finals.jpg" align="center" title="Jordan e Magic Jhonson, grandes amigos duelando pela final da NBA"><br><br>
+        
+        <p style="text-align: justify;">O primeiro título da franquia, foi a porta de entrada para o primeiro, de dois tri-campeonatos.<br><br>
+        A evolução da equipe de Chicago após a chegada de Michael Jordan foi algo que transcendia a tudo que já havia sido visto no basquetebol. Nunca antes, um único jogador impactou grandemente uma equipe de forma tão contundente e, agora, sob o comando de Phill Jackson, e um significativo aumento do jogo mental de Michael, o Chicago Bulls, definitivamente estavam prontos para alcançar o lugar mais alto da liga.<br><br>
+        Após um recorde da franquia na temporada regular (61-21), o Bulls se classificou aos Playoffs e, logo na primeira rodada, encararam a duríssima equipe de Nova Iorque, os Knicks. Porém, os Bulls, focados, varreram a equipe nova iorquina por 3-0 (essa temporada, a primeira rodada dos playoffs ainda eram definidas em um total de 5 partidas), encarando logo na sequência, a tradicional equipe dos 76ers, de Philadelphia, também os despachando, 4-1.<br><br>
+        Na final de conferência, o Bulls encararia seu maior algoz. O Detroit Pistons, liderado pelo talentoso e polêmico Isaih Thomas, responsável pela eliminação dos Bulls nas últimas três temporadas, tentariam mais uma vez eliminar os Bulls. Mas, como dito acima, o Chicago tinha aprendido com os erros passados, e nem mesmo o jogo sujo dos Bad Boys de Detroit foi capaz de barrar o desejo de vencer dos Touros. Vencendo o Detroit por 3-0, varreu de vez a dominância do Detroit na conferência leste, e sagrou-se campeão dela.<br><br>
+        A grande final, foi diante de um dos maiores campeões da liga, o Los Angeles Lakers. Os angelinos que na década antescedente dividiu o protagonismo da liga com o Boston Celtics e Detroit Pistons, contava, nada mais nada menos, com uma das lendas do basquete, Magic Jhonson. O único problema então, era que o Lakers da final, já estava em decadência do que se viu na década de 80. Jhonson em final de carreira encarou um Bulls sedento e, um Michael Jordan em plena forma, física, técnica e mental.<br><br>
+        Em uma série finalizada em 5 jogos (4-1), o Chicago Bulls levou o primeiro troféu Larry O'Brien para a Cidade dos Ventos.</p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Collapsible Group Item #2
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Collapsible Group Item #3
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+      <!--Fim Acordion-->    
+  </div> <!--Container transparente vermelho fim-->
 
 
 </body>
