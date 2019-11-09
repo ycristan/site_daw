@@ -4,10 +4,40 @@
 <meta charset="utf-8">
 <link rel="icon" href="imagens/favicon.ico">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Autour+One&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/eef4d1033b.js" crossorigin="anonymous"></script>
 
-<head>
-	<title>Home - Chicago Bulls</title>
-</head>
+<style type="text/css">
+  body{
+    background-image: url("imagens/fundo.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  nav{
+    opacity: 0.9;
+  }
+  
+
+  .jumbotron{
+  		margin: 30px;
+  }
+  .container{
+  		background-color: rgba(178,34,34,0.8);
+  		padding: 30px;
+  		margin-top: 30px;
+  		margin-bottom: 30px;
+  		padding: 30px;
+  }
+  .botao{
+  		align-items: center;
+  }
+
+</style>
+
+
 <body>
 
 
@@ -46,6 +76,85 @@
 <!--Fim barra de navegação-->
 
 
+<div class="container" style="border-radius: 30px; margin-top: 5%" > <!--Container vermelho transparente inicio-->
+    
+			<h1 style="font-family: 'Autour One', cursive; color: white" align="center">Fale conosco</h1>
+
+			<form style="font-weight: bold;">
+			  <div class="form-row">
+			    <div class="form-group col-md-6">
+			      <label for="inputEmail4">Nome</label>
+			      <input type="name" class="form-control" id="inputName" placeholder="Nome" required="true">
+			    </div>
+			    <div class="form-group col-md-6">
+			      <label for="inputPassword4">Email</label>
+			      <input type="email" class="form-control" id="inputPassword4" placeholder="Password" required="true">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputAddress">Endereço</label>
+			    <input type="text" class="form-control" id="inputAddress" placeholder="Rua/Avenida....">
+			  </div>
+			  <div class="form-row">
+			    <div class="form-group col-md-6">
+			      <label for="inputCity">Cidade</label>
+			      <input type="text" class="form-control" id="inputCity" placeholder="Cidade">
+			    </div>
+			    <div class="form-group col-md-4">
+			      <label for="inputState">State</label>
+			      <select id="inputState" class="form-control">
+			        <option selected>Choose...</option>
+			        <option>AC</option>
+			        <option>AL</option>
+			        <option>AP</option>
+			        <option>AM</option>
+			        <option>BA</option>
+			        <option>CE</option>
+			        <option>DF</option>
+			        <option>ES</option>
+			        <option>GO</option>
+			        <option>MA</option>
+			        <option>MT</option>
+			        <option>MS</option>
+			        <option>MG</option>
+			        <option>PA</option>
+			        <option>PB</option>
+			        <option>PR</option>
+			        <option>PE</option>
+			        <option>PI</option>
+			        <option>RJ</option>
+			        <option>RN</option>
+			        <option>RS</option>
+			        <option>RO</option>
+			        <option>RR</option>
+			        <option>SC</option>
+			        <option>SP</option>
+			        <option>SE</option>
+			        <option>TO</option>
+			       </select>
+			    </div>
+			    <div class="form-group col-md-2">
+			      <label for="inputZip">CEP</label>
+			      <input type="text" class="form-control" id="inputZip" maxlength="8">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    </div>
+
+			    	<div class="form-group">
+    					<label for="exampleFormControlTextarea1">Mensagem</label>
+    					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Envie sa mensagem..."></textarea>
+  					</div>
+
+			  <button type="submit" class="btn btn-dark" style="border-radius: 10px">Sign in</button>
+			</form>
+			<br>
+			<h1 style="font-family: 'Autour One', cursive; color: white" align="center">Localização do Chicago Stadium</h1>
+			<div align="center" style="margin-top: 5%">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.564461166661!2d-87.6767930847387!3d41.88071627922194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2d3bf5188185%3A0x71c39fefac6ba5b8!2sChicago%20Stadium!5e0!3m2!1spt-BR!2sbr!4v1573262983825!5m2!1spt-BR!2sbr" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="true" align="center" style="border-radius: 30px"></iframe>
+			</div>
+
+</div> <!--Container transparente vermelho fim-->
 
 
 </body>

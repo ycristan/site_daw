@@ -1,0 +1,5 @@
+﻿-- Itens para o site Bootstrap --
+
+- 2 recursos extras al�m dos citados acima
+
+---- Importante: site responsivo
