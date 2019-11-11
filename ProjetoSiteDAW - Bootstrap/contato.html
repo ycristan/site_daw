@@ -43,7 +43,7 @@
 
 <!--Incicio barra de navegação-->
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" href="home.html">
   	<img src="imagens\logo.png" width="50px">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,8 +57,8 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="home.html">Home</a>
-          <a class="dropdown-item" href="#">Jerseys retiradas</a>
-          <a class="dropdown-item" href="#">Michael Jordan</a>
+          <a class="dropdown-item" href="titulos.html">Os Títulos</a>
+          <a class="dropdown-item" href="jerseysretiradas">Jerseys Retiradas</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Contato</a>
         </div>
@@ -80,7 +80,7 @@
     
 			<h1 style="font-family: 'Autour One', cursive; color: white" align="center">Fale conosco</h1>
 
-			<form style="font-weight: bold;">
+			<form style="font-weight: bold; color: white">
 			  <div class="form-row">
 			    <div class="form-group col-md-6">
 			      <label for="inputEmail4">Nome</label>
@@ -145,8 +145,34 @@
     					<label for="exampleFormControlTextarea1">Mensagem</label>
     					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Envie sa mensagem..."></textarea>
   					</div>
+  					<!--Começo botão modal-->
 
-			  <button type="submit" class="btn btn-dark" style="border-radius: 10px">Sign in</button>
+  						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+						  Enviar
+						</button>
+
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content" style="background-color: black">
+						      <div class="modal-header">
+						        <h5 class="modal-title" id="exampleModalLabel" style="color: white">Sua mensagem foi enviada!</h5>
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body" style="color: white">
+						        Fique tranquilo! Em breve retornaremos seu contato!
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+
+  					<!--fim do botão modal-->
 			</form>
 			<br>
 			<h1 style="font-family: 'Autour One', cursive; color: white" align="center">Localização do Chicago Stadium</h1>

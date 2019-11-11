@@ -3,9 +3,12 @@
 
 <meta charset="utf-8">
 <link rel="icon" href="imagens/favicon.ico">
+<meta name="viewport" content="width=divece-width, initial-scale=1">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Autour+One&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/eef4d1033b.js" crossorigin="anonymous"></script>
+
+
 
 <style type="text/css">
   body{
@@ -14,6 +17,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    overflow-x: hidden;
   }
 
   nav{
@@ -30,23 +34,30 @@
   		margin-top: 30px;
   		margin-bottom: 30px;
   		padding: 30px;
+
   }
+
   .botao{
   		align-items: center;
+  }
+
+  .card{
+  	width: 296px;
+  	margin: 3%;
   }
 
 </style>
 
 
 <head>
-	<title>Home - Chicago Bulls</title>
+	<title>Jerseys Aposentadas - Chicago Bulls</title>
 </head>
 <body>
 
 
 <!--Incicio barra de navegação-->
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" href="home.html">
   	<img src="imagens\logo.png" width="50px">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,15 +70,14 @@
           Bulls
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="titulos.html">Os títulos</a>
-          <a class="dropdown-item" href="#">Jerseys retiradas</a>
-          <a class="dropdown-item" href="#">Michael Jordan</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Contato</a>
+        	<a class="dropdown-item" href="home.html">Home</a>
+          	<a class="dropdown-item" href="titulos.html">Os títulos</a>
+          		<div class="dropdown-divider"></div>
+          			<a class="dropdown-item" href="contato.html" target="_blank">Contato</a>
         </div>
       </li>
         <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Jerseys Retiradas <span class="sr-only">(current)</span></a>
       </li>
       </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -79,51 +89,228 @@
 <!--Fim barra de navegação-->
 
 
-<div class="container" style="border-radius: 30px"> <!--Container vermelho transparente inicio-->
-    
-			<h1 align="center" style="color: white; font-family: 'Autour One", cursive;>Os imortalizados</h1><br>
+<div class="container" style="border-radius: 30px; margin-top: 3%"> <!--Container vermelho transparente inicio-->
+    		
+					
+						<div>
+						<h1 align="center" style="color: white; font-family: 'Autour One'">Jerseys Retiradas</h1>
+						</div>
+							<div align="center">
+								<button type="button" data-toggle="popover" data-placement="bottom" data-content="Aposentar uma jersey (ou camisa) é a maior honraria nos esportes americanos para um atleta. Significa que nunca mais outro atleta poderá utilizar o mesmo número de camisa nesta equipe. No Chicago Bulls, por exemplo, as número #4, #10, #23 e #33 estarão no teto do ginásio para sempre, em quadra, nunca mais!" title="Jersey Aposentada" style="background-color: black; color: white">
+								O que é aposentadoria de Jersey?
+								</button>
+							</div>
+					
+</div> <!--Container transparente vermelho fim-->
 
 				<div class="row">
 					<div class="col-lg-3 col-md-6 col-sm-12">
-					<div class="card" style="width: 18rem;"> <!--Jerry Sloan-->
+					<div class="card"> <!--Jerry Sloan-->
 	  						<img src="imagens/jerrysloan.jpg">
 	  					<div class="card-body" style="background-color: rgb(178,34,34);">
 	    					<h5 class="card-title" style="color: white">#4 - Jarry Sloan</h5>
 	    					<p class="card-text" style="color: white">Jerry Sloan teve sua camisa #4 retirada em 17/02/1978.</p>
-	    					<a href="#" class="btn btn-outline-dark">Saiba mais</a>
+	    					<!--inicio modal-->
+
+	    						<!-- Button trigger modal -->
+								<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#Sloan" style="background-color: black; color: white">
+								  Saiba mais
+								</button>
+
+								<!-- Modal -->
+								<div class="modal fade" id="Sloan" tabindex="-1" role="dialog" aria-labelledby="Sloan" aria-hidden="true">
+								  <div class="modal-dialog" role="document">
+								    <div class="modal-content">
+								      <div class="modal-header">
+								        <h5 class="modal-title" id="Sloan_long">Jerry Sloan - #4</h5>
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>
+								      </div>
+								      <div class="modal-body">
+
+								      	<div align="center">
+								      		<img src="https://www.thefamouspeople.com/profiles/images/jerry-sloan-1.jpg" style="margin-bottom: 10px; width: 256px" class="img-fluid rounded-circle">
+								      	</div>
+
+								        <div><p style="text-align: justify;">Sloan jogou pelo time de basquete da Universidade de Evansville e foi escolhido pelo Baltimore Bullets como a 4° escolha geral no Draft da NBA de 1965.Após uma temporada, ele foi trocado para o Chicago Bulls, onde ele ficou conhecido como "o Bull Original".Ele ficou conhecido por sua defesa tenaz e levou a equipe para os playoffs e ao seu primeiro e único título de divisão antes da era Michael Jordan.
+								        </p></div>
+								        <div><p style="text-align: justify;">
+								        Após uma série de lesões no joelho, ele se aposentou em 1976. As médias de sua carreira são de 14.0 pontos, 2.5 assistencias, 7.4 rebotes e 2.2 roubadas de bola. Sua camisa número 4 foi posteriormente aposentada pelo Chicago Bulls em 1978, tornando-se a primeira camisa aposentada da história da franquia.
+								    	</p></div>
+								    	<div><p style="text-align: justify;">
+								        Depois de se aposentar em 1976, Sloan aceitou o emprego de assistente na Universidade de Evansville, mas se demitiu após cinco dias. Na mesma temporada, o time de basquete de Evansville e a equipe técnica foram mortos em um acidente de avião no aeroporto de Evansville. Dois anos depois, Sloan foi contratado pelos Bulls como olheiro. Depois de uma temporada neste cargo, ele se tornou assistente técnico da equipe. Em 1979, Sloan foi promovido ao cargo de treinador. Ele ocupou o cargo por menos de três temporadas, vencendo 94 jogos e perdendo 121. Ele liderou o time até os playoffs em sua segunda temporada, mas foi demitido após um início ruim durante a campanha seguinte.
+								    	</p></div>
+
+								      </div>
+								      <div class="modal-footer">
+								        <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+
+	    					<!--fimmodal-->
 	  					</div>
 					</div>
 					</div><!--col-->
 
 					<div class="col-lg-3 col-md-6 col-sm-12">
-					<div class="card" style="width: 18rem;"> <!--BobLove-->
-	  						<img src="imagens/boblove.jpg" width="290px">
+					<div class="card"> <!--BobLove-->
+	  						<img src="imagens/boblove.jpg" style="width: 294px">
 	  					<div class="card-body" style="background-color: rgb(178,34,34);">
 	    					<h5 class="card-title" style="color: white">#10 - Bob Love</h5>
 	    					<p class="card-text" style="color: white">Bob Love teve sua camisa #10 retirada em 14/01/1994.</p>
-	    					<a href="#" class="btn btn-outline-dark">Saiba mais</a>
+	    					<!--inicio modal-->
+
+	    						<!-- Button trigger modal -->
+								<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#Love" style="background-color: black; color: white">
+								  Saiba mais
+								</button>
+
+								<!-- Modal -->
+								<div class="modal fade" id="Love" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+								  <div class="modal-dialog" role="document">
+								    <div class="modal-content">
+								      <div class="modal-header">
+								        <h5 class="modal-title" id="Love_longtitle">Bob Love - #10</h5>
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>
+								      </div>
+								      <div class="modal-body">
+
+								      	<div align="center">
+								      		<img src="imagens/boblove.jpg" style="margin-bottom: 10px; width: 295px" class="img-fluid rounded-circle">
+								      	</div>
+
+								        <div><p style="text-align: justify;">Love começou sua carreira de sucesso na Morehouse High School em Louisiana, antes ir para a Universidade Southern onde foi All-American duas vezes em 1963 e 1965. Em 1965 foi selecionado na quarta rodada pelo Cincinnati Royals, mas foi jogar na LBL (Liga de Basquetebol do Leste), onde anotou 25 pontos de média e foi eleito o novato do ano e assim chegou aos Royals. Love atuou pela franquia de Cincinnati por duas temporadas, basicamente como um reserva com médias de 6.5 pontos e 3.4 rebotes, em 1968 com a expansão da liga, foi selecionado pelo Milwaukee Bucks no Draft de expansão e trocado para o Chicago Bulls.
+								        </p></div>
+								        <div><p style="text-align: justify;">
+   										No Bulls treinado por Dick Motta seu jogou fluiu, teve grande destaque na NBA, logo na sua primeira temporada foi titular e teve médias de 21 pontos e 8.7 rebotes. Nas temporadas seguintes médias de mais de 25 pontos, tornou-se All-Star e viveu seus melhores anos na liga. Enquanto atleta do Bulls foi 3 x All-Star, 2 x All-NBA Segundo Time e 3 x All-NBA Segundo Time de Defesa, por sua passagem em Chicago teve o número 10 aposentado, sendo o segundo atleta da franquia a receber essa honra.
+   										Teve sua camisa, #10, retirada dos Bulls em janeiro de 1994, no mesmo ano em que Jordan também teria a sua aposentada pela franquia.
+   										</p></div>
+
+								      </div>
+								      <div class="modal-footer">
+								        <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+
+	    					<!--fimmodal-->
 	  					</div>
 					</div>
 					</div><!--col 2-->
 
 					<div class="col-lg-3 col-md-6 col-sm-12">
-					<div class="card" style="width: 18rem;"> <!--Michael Jordan-->
+					<div class="card"> <!--Michael Jordan-->
 	  						<img src="imagens/michaeljordan.jpg">
 	  					<div class="card-body" style="background-color: rgb(178,34,34);">
 	    					<h5 class="card-title" style="color: white">#23 - MIchael Jordan</h5>
 	    					<p class="card-text" style="color: white">Michael Jordan teve sua camisa #23 retirada em 01/11/1994.</p>
-	    					<a href="#" class="btn btn-outline-dark">Saiba mais</a>
+	    					<!--inicio modal-->
+
+	    						<!-- Button trigger modal -->
+								<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#Jordan" style="background-color: black; color: white">
+								  Saiba mais
+								</button>
+
+								<!-- Modal -->
+								<div class="modal fade" id="Jordan" tabindex="-1" role="dialog" aria-labelledby="Jordan" aria-hidden="true">
+								  <div class="modal-dialog" role="document">
+								    <div class="modal-content">
+								      <div class="modal-header">
+								        <h5 class="modal-title" id="Jordan_long">Michael Jordan - #23</h5>
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>
+								      </div>
+								      <div class="modal-body">
+
+								      		<div align="center">
+								      		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTN9C3EQ13kXVYXfY6x4a1guKv4UdwPmNDdmWLTnn8jizllFA9Y" style="margin-bottom: 10px" class="img-fluid rounded-circle">
+								      		</div>
+
+								        <div><p style="text-align: justify;">Michael Jeffrey Jordan (Nova Iorque, 17 de fevereiro de 1963) é um ex-jogador norte-americano de basquete profissional, atualmente dono da equipe da NBA, Charlotte Hornets. É considerado por muitos como o melhor jogador de basquete de todos os tempos e por muitos como um dos mais importantes desportistas masculinos da história.
+								        </p></div>
+								        <div><p style="text-align: justify;">
+										Jordan estudou na Universidade da Carolina do Norte, onde foi campeão da NCAA em 1982. Entrou na NBA em 1984 ao ser escolhido pelo Chicago Bulls, e logo se tornou uma das estrelas da liga por sua incrível capacidade de pontuar e habilidade nos saltos. Seus pulos, com enterradas pulando da linha do lance-livre, renderam participações marcantes nos concursos de enterradas e os apelidos de Air Jordan e His Airness. Além de tudo, Jordan foi um dos melhores marcadores que o basquete já viu. Venceu seu primeiro título da NBA em 1991, seguidos por mais dois troféus. Antes da temporada 1993–94 iniciar-se, Jordan se aposentou do basquete para jogar beisebol, mas rapidamente voltou às quadras em 1995 e liderou o Chicago Bulls a mais 3 títulos consecutivos entre 1996 e 1998. Em 1999 anunciou outra aposentadoria, assumindo um posto entre os dirigentes do Washington Wizards. Eventualmente Jordan decidiu voltar a jogar pelo Wizards em 2001, ficando nas quadras até 2003.<br>
+										</p></div>
+										<div><p style="text-align: justify;">
+										Foi eleito o melhor jogador da temporada regular por cinco vezes, melhor jogador das finais em todos os seis títulos do Bulls, 10 vezes incluído entre All-NBA Team, 9 vezes para o NBA All-Defensive Team. Participou de 13 NBA All-Star Game e foi melhor jogador do All-Star Game em 3 oportunidades. Foi cestinha da liga em 10 temporadas, maior ladrão de bolas por 3 vezes e eleito Defensor do Ano em 1988. A sua pontuação máxima num único jogo foi de 69 pontos, contra os Cleveland Cavaliers no dia 28 de Março de 1990. Um dos seus recordes mais marcantes e uma das provas da sua superioridade no basquete, é a sua média de pontos durante toda a carreira: 30,1 pontos em quinze temporadas. Pela seleção estadunidense, Jordan foi bicampeão do torneio olímpico de basquete. Foi introduzido no Basketball Hall of Fame em 2009.<br>
+										</p></div>
+										<div><p style="text-align: justify;">
+										Maior ídolo da história do Chicago Bulls, em seu último jogo contra o Chicago Bulls, atuando pelo Washington Wizards aos 38 anos de idade, Jordan foi ovacionado em pé no Chicago Stadium por mais de 4 minutos.<br>
+										Teve sua camisa aposentada pela franquia em 01/11/1994.
+										</p></div>
+
+								      </div>
+								      <div class="modal-footer">
+								        <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+
+	    					<!--fimmodal-->
 	  					</div>
 					</div>
 					</div><!--col 3-->
 
 					<div class="col-lg-3 col-md-6 col-sm-12">
-					<div class="card" style="width: 18rem;"> <!--Scottie Pippen-->
+					<div class="card"> <!--Scottie Pippen-->
 	  						<img src="imagens/scottiepippen.jpg">
 	  					<div class="card-body" style="background-color: rgb(178,34,34);">
 	    					<h5 class="card-title" style="color: white">#33 - MIchael Jordan</h5>
 	    					<p class="card-text" style="color: white">Scottie Pippen teve sua camisa #33 retirada em 09/12/2005.</p>
-	    					<a href="#" class="btn btn-outline-dark">Saiba mais</a>
+	    						
+	    					<!--inicio modal-->
+
+	    						<!-- Button trigger modal -->
+								<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#Pippen" style="background-color: black; color: white">
+								  Saiba mais
+								</button>
+
+								<!-- Modal -->
+								<div class="modal fade" id="Pippen" tabindex="-1" role="dialog" aria-labelledby="Pippen" aria-hidden="true">
+								  <div class="modal-dialog" role="document">
+								    <div class="modal-content">
+								      <div class="modal-header">
+								        <h5 class="modal-title" id="Pippen_long">Scottie Pippen - #33</h5>
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>
+								      </div>
+								      <div class="modal-body">
+
+								      		<div align="center">
+								      		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT27yY5KHpCkN8l09GQOWHc5a7_q9D6WYIZzQz-74TE1I53k7iJ" style="margin-bottom: 10px" class="img-fluid rounded-circle">
+								      		</div>
+
+								      	<div>
+								        <p style="text-align: justify;">Scotty Maurice Pippen (nascido em 25 de setembro de 1965), comumente escrito Scottie Pippen, é um ex-jogador de basquete profissional. Ele jogou 17 temporadas na National Basketball Association (NBA), vencendo seis títulos da NBA com o Chicago Bulls. Pippen, juntamente com Michael Jordan, desempenhou um papel importante na transformação dos Bulls e na popularização da NBA em todo o mundo durante os anos 90.
+								        </p></div>
+								        <div><p style="text-align: justify;">
+										Considerado um dos maiores Alas de todos os tempos, Pippen foi nomeado para a Primeira Equipe Defensiva da NBA oito vezes consecutivas e para a Primeira Equipe All-NBA três vezes. Ele foi nomeado um dos 50 Maiores Jogadores da História da NBA durante a temporada de 1996-97 e é um dos quatro jogadores a ter seu camisa aposentada pelo Chicago Bulls (os outros são Jerry Sloan, Bob Love e Michael Jordan).
+										</p></div>
+										<div><p style="text-align: justify;">
+										Pippen é o único jogador da NBA a ganhar o título da NBA e a medalha de ouro olímpica no mesmo ano duas vezes (1992, 1996). Ele fazia parte do "Dream Team" olímpico dos EUA em 1992, que venceu seus oponentes em uma média de 44 pontos.
+										</p></div>
+										<div><p style="text-align: justify;">
+										Pippen é duas vezes participante do Hall da Fama do Basquetebol (por sua carreira individual e como membro do "Dream Team"), tendo sido indicado para ambos em 13 de agosto de 2010. Em 8 de dezembro de 2005, o Chicago Bulls aposentou seu número 33, enquanto sua faculdade, Universidade do Arkansas, aposentou seu número 33 em 21 de janeiro de 2010 também.</p></div>
+
+								      </div>
+								      <div class="modal-footer">
+								        <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+
+	    					<!--fimmodal-->
+
 	  					</div>
 					</div>
 					</div><!--col 4-->
@@ -134,7 +321,7 @@
 				</div><!--fim da row-->
 
   		
-</div> <!--Container transparente vermelho fim-->
+
 
 
 
@@ -151,4 +338,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+<script>
+	$('[data-toggle="popover"]').popover();
+</script>
 </html>
