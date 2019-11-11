@@ -1,5 +1,18 @@
 ﻿-- Itens para o site Bootstrap --
 
+- Container x
+- Grid System x
+- NavBar x
+- Jumbotron x
+- Imagens (bordas/circular) x
+- Cards x
+- Accordion x
+- Formul�rios / Bot�es x
+- Font Awesome x
+- Carrossel x
+- Mapas x
 - 2 recursos extras al�m dos citados acima
+    1 - modal x
+    2 - popover x
 
 ---- Importante: site responsivo
